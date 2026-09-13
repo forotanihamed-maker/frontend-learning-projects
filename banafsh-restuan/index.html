@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پروژه</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar">
+        <img src="./images/menu.png" alt="" class="burger" id="burger" />
+        <a href="#menu" class="nav-item">منو</a>
+        <a href="#about-us" class="nav-item">درباره ما</a>
+        <a href="#comments" class="nav-item">نظرات</a>
+        <a href="#footer" class="nav-item">تماس با ما</a>
+      </nav>
+      <img src="./images/banafsh-logo.png" alt="logo" class="logo" />
+      <a href="" class="button">رزرو میز آنلاین</a>
+    </header>
+    <main>
+      <section class="menu" id="menu">
+        <h1>
+          رستوران
+          <span class="purple">بنفش</span>
+        </h1>
+        <a href="" class="button button-purple">مشاهده منو کامل </a>
+        <div class="menu-items">
+          <figure class="menu-item">
+            <img
+              src="./images/drink.png"
+              class="menu-item-image"
+              alt="نوشیدنی"
+            />
+            <figcaption class="menu-item-text">
+              <h2>نوشیدنی</h2>
+              <p>لورم ایتیتایسس اسایس</p>
+            </figcaption>
+          </figure>
+          <figure class="menu-item">
+            <img
+              src="./images/barbecue.png"
+              class="menu-item-image"
+              alt="سوخاری"
+            />
+            <figcaption class="menu-item-text">
+              <h2>سوخاری</h2>
+              <p>لورم ایتیتایسس اسایس</p>
+            </figcaption>
+          </figure>
+          <figure class="menu-item">
+            <img src="./images/pizza.png" class="menu-item-image" alt="پیتزا" />
+            <figcaption class="menu-item-text">
+              <h2>پیتزا</h2>
+              <p>لورم ایتیتایسس اسایس</p>
+            </figcaption>
+          </figure>
+          <figure class="menu-item">
+            <img
+              src="./images/burger.png"
+              class="menu-item-image"
+              alt="همبرگر"
+            />
+            <figcaption class="menu-item-text">
+              <h2>همبرگر</h2>
+              <p>لورم ایتیتایسس اسایس</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="comments" id="comments">
+        <h2>
+          نظرات مشتریان
+          <span class="purple">بنفش</span>
+        </h2>
+        <div class="comment-items" id="comment-items"></div>
+      </section>
+      <section class="about-us" id="about-us">
+        <div class="about-us-text">
+          <h2>
+            درباره رستوران
+            <span class="yellow">بنفش</span>
+          </h2>
+          <p>
+            لورم این یک متن ساه=ختگی برای بخش درباره ما برای پروژه رستوران بنفش
+            است لورم این یک متن ساه=ختگی برای بخش درباره ما برای پروژه رستوران
+            بنفش است لورم این یک متن ساه=ختگی برای بخش درباره ما برای پروژه
+            رستوران بنفش است لورم این یک متن ساه=ختگی برای بخش درباره ما برای
+            پروژه رستوران بنفش است لورم این یک متن ساه=ختگی برای بخش درباره ما
+            برای پروژه رستوران بنفش است
+          </p>
+        </div>
+        <img
+          src="./images/banafsh.png"
+          class="about-us-img"
+          alt="رستوران بنفش"
+        />
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <section class="contact-us">
+        <h2>اطلاعات تماس</h2>
+        <div class="contact-us-items">
+          <h3 class="contact-us-title">
+            <img src="./images/location.svg" alt="آدرس" />
+            آدرس
+            <address>لورم متن ساختگی برای آدرس</address>
+          </h3>
+        </div>
+        <div class="contact-us-items">
+          <h3 class="contact-us-title">
+            <img src="./images/mail.svg" alt="ایمیل" />
+            ایمیل
+            <a href="mailt00:hello@gmail.com">hello@gmail.com</a>
+          </h3>
+        </div>
+        <div class="contact-us-items">
+          <h3 class="contact-us-title">
+            <img src="./images/phone.svg" alt=" شماره تماس" />
+            شماره تماس
+            <a href="tel:09025921972">09025921972</a>
+          </h3>
+        </div>
+      </section>
+      <form id="form" class="form">
+        <h2>رزرو میز آنلاین</h2>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="نام و نام خانوادگی"
+          title="نام و نام خانوادگی"
+          autocomplete="off"
+          class="input"
+        />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="شماره تماس "
+          title="شماره تماس "
+          autocomplete="off"
+          class="input"
+        />
+        <select title="تعداد نفرات" name="number" class="input" id="number">
+          <option value="">تعداد نفرات</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select title="ساعت" name="time" class="input" id="time">
+          <option value="">ساعت</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+        </select>
+        <input type="submit" value="ثبت درخواست" class="form-button" />
+      </form>
+    </footer>
+    <div class="popup-hide" id="popup">
+      <div class="popup-massage">
+        <h2>
+          تخفیف ویژه رستوران
+          <span class="purple">بنفش</span>
+        </h2>
+        <a href="#footer" class="button button-yellow"
+          >برای دریافت کد تخفیف کلیک کنید</a
+        >
+      </div>
+    </div>
+    <a href="#header" class="float">
+      <img src="./images/arrow.svg" alt="arrow" />
+    </a>
+    <script src="./index.js"></script>
+  </body>
+</html>
