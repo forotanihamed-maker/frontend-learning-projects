@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-left">
+          <a href="#" class="brandName">
+            <span class="brand-icon">🎬</span>
+            Movie Explorer
+          </a>
+        </div>
+
+        <nav class="nav-center">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">About</a>
+        </nav>
+
+        <div class="nav-right" id="nav-right">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search movies..."
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            class="search-btn"
+            id="headerSearch"
+            aria-label="Search"
+          >
+            🔍
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Find Your Next
+            <span class="hero-highlight">Favorite Movie</span>
+          </h1>
+          <p class="hero-subtitle">
+            Search millions of movies and series, discover cast, plot, ratings,
+            and more — all in one place.
+          </p>
+
+          <form class="hero-search" id="hero-search-form">
+            <input
+              type="search"
+              id="hero-search-input"
+              placeholder="Try 'Inception' or 'Batman'..."
+              autocomplete="off"
+            />
+            <button type="submit" class="btn btn-primary">🔍 Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- STATUS (loading / empty / error) -->
+      <div id="status" class="status hidden">
+        <div class="status-message" id="status-message"><p></p></div>
+      </div>
+
+      <!-- MOVIE GRID -->
+      <div id="movie-grid" class="movie-grid"></div>
+
+      <!-- MODAL -->
+      <div id="modal" class="modal hidden">
+        <div class="modal-overlay" data-close></div>
+        <div class="modal-content">
+          <button class="modal-close" data-close aria-label="Close">✕</button>
+          <div class="modal-body" id="modal-body"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
